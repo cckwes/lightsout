@@ -1,0 +1,19 @@
+x00xx
+xxx0x		//1
+xxxx0
+
+xxxx0
+xxxxx		//2
+xx0x0
+
+0xx00
+x0x00		//3
+xxxx0
+
+xxx0x
+xxxx0		//4
+xx0x0
+
+00000
+00000		//5
+00000
