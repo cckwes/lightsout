@@ -124,7 +124,7 @@ Rectangle {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: {
-                            console.log(model.number);
+                            //console.log(model.number);
                             Engine.triggerSurrounding(model.number,mainWindow.rows,mainWindow.columns);
                             mainWindow.moves += 1;
                             Engine.checkAllOff(lightModel.count);
@@ -154,7 +154,8 @@ Rectangle {
             width: parent.width
             height: 200
             anchors.verticalCenter: parent.verticalCenter
-            spacing: 20
+            spacing: 40
+
             Text {
                 text: "Level Completed!"
                 font.pixelSize: 34
@@ -172,6 +173,14 @@ Rectangle {
                 font.pixelSize: 26
                 color: "white"
                 text: "Level " + mainWindow.level + " completed in " + mainWindow.moves + " moves"
+                width: parent.width
+                horizontalAlignment: Text.AlignHCenter
+            }
+
+            Text {
+                font.pixelSize: 26
+                color: "white"
+                text: "Click to continue to the next level"
                 width: parent.width
                 horizontalAlignment: Text.AlignHCenter
             }
